@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveRight Driving School</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+    <a href="#home" class="text-xl font-bold tracking-wide">🚗 DriveRight</a>
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+    <div class="hidden md:flex space-x-8 font-medium">
+      <a href="#home" class="hover:text-yellow-400 transition">Home</a>
+      <a href="#classes" class="hover:text-yellow-400 transition">Classes</a>
+      <a href="#about" class="hover:text-yellow-400 transition">About Us</a>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-blue-800 px-4 pb-4 space-y-2">
+    <a href="#home" class="block py-2 hover:text-yellow-400">Home</a>
+    <a href="#classes" class="block py-2 hover:text-yellow-400">Classes</a>
+    <a href="#about" class="block py-2 hover:text-yellow-400">About Us</a>
+  </div>
+</nav>
+
+<!-- Home / Hero -->
+<section id="home" class="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+  <div class="max-w-6xl mx-auto px-4 py-24 flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+        Learn to Drive with Confidence
+      </h1>
+      <p class="text-lg md:text-xl text-blue-100 mb-8">
+        Friendly instructors, flexible scheduling, and a proven track record of first-time pass success.
+      </p>
+      <a href="#classes" class="inline-block bg-yellow-400 text-blue-900 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition">
+        View Our Classes
+      </a>
+    </div>
+    <div class="flex-1">
+      <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80"
+           alt="Person learning to drive"
+           class="rounded-2xl shadow-2xl w-full object-cover">
+    </div>
+  </div>
+</section>
+
+<!-- Features strip -->
+<section class="bg-white py-10 border-b">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+    <div>
+      <p class="text-3xl font-bold text-blue-800">98%</p>
+      <p class="text-gray-500">First-Time Pass Rate</p>
+    </div>
+    <div>
+      <p class="text-3xl font-bold text-blue-800">15+</p>
+      <p class="text-gray-500">Years of Experience</p>
+    </div>
+    <div>
+      <p class="text-3xl font-bold text-blue-800">5,000+</p>
+      <p class="text-gray-500">Students Taught</p>
+    </div>
+  </div>
+</section>
+
+<!-- Classes -->
+<section id="classes" class="max-w-6xl mx-auto px-4 py-20">
+  <h2 class="text-3xl font-bold text-center mb-2">Our Classes</h2>
+  <p class="text-center text-gray-500 mb-12">Pick the package that fits your needs. (Details coming soon!)</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-blue-800 hover:shadow-xl transition">
+      <h3 class="text-xl font-bold mb-2">Beginner Package</h3>
+      <p class="text-gray-500 mb-4">Perfect for first-time drivers starting from scratch.</p>
+      <p class="text-3xl font-extrabold text-blue-800 mb-6">$XXX</p>
+      <ul class="text-gray-600 space-y-2 mb-6">
+        <li>✔ Basics of vehicle control</li>
+        <li>✔ In-car lessons</li>
+        <li>✔ Practice test prep</li>
+      </ul>
+      <button class="w-full bg-blue-800 text-white py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+        Learn More
+      </button>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-yellow-400 hover:shadow-xl transition">
+      <h3 class="text-xl font-bold mb-2">Standard Package</h3>
+      <p class="text-gray-500 mb-4">For drivers who want extra practice and confidence.</p>
+      <p class="text-3xl font-extrabold text-blue-800 mb-6">$XXX</p>
+      <ul class="text-gray-600 space-y-2 mb-6">
+        <li>✔ Everything in Beginner</li>
+        <li>✔ Highway driving practice</li>
+        <li>✔ Parking mastery</li>
+      </ul>
+      <button class="w-full bg-blue-800 text-white py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+        Learn More
+      </button>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-blue-800 hover:shadow-xl transition">
+      <h3 class="text-xl font-bold mb-2">Test-Ready Package</h3>
+      <p class="text-gray-500 mb-4">Final prep before your official driving test.</p>
+      <p class="text-3xl font-extrabold text-blue-800 mb-6">$XXX</p>
+      <ul class="text-gray-600 space-y-2 mb-6">
+        <li>✔ Mock driving test</li>
+        <li>✔ Personalized feedback</li>
+        <li>✔ Test-day tips</li>
+      </ul>
+      <button class="w-full bg-blue-800 text-white py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+        Learn More
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- About Us -->
+<section id="about" class="bg-blue-50 py-20">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80"
+           alt="Driving instructor with student"
+           class="rounded-2xl shadow-xl w-full object-cover">
+    </div>
+    <div class="flex-1">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-gray-600 mb-4">
+        DriveRight Driving School has been helping new drivers hit the road safely and confidently
+        for over 15 years. Our certified instructors are patient, encouraging, and dedicated to
+        making sure every student is fully prepared — both for the test and for real life on the road.
+      </p>
+      <p class="text-gray-600">
+        Whether you're a nervous first-timer or brushing up before your exam, we'll meet you where
+        you are and help you get where you need to go.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-blue-100 py-8">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <p>&copy; 2026 DriveRight Driving School. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a href="#home" class="hover:text-white transition">Home</a>
+      <a href="#classes" class="hover:text-white transition">Classes</a>
+      <a href="#about" class="hover:text-white transition">About Us</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+  // Close mobile menu after clicking a link
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => menu.classList.add('hidden'));
+  });
+</script>
+
+</body>
+</html>
